@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+
+  <title>Calculator</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="calContainer">
+    <div class="calBox">
+      <div class="display" id="display"> <input type="text" id=dislay placeholder="0" disabled></input>
+      </div>
+      <div class="buttons">
+        <div class="row1 rows">
+          <button onclick="clearDisplay()" class="AC" id="AC"> AC</button>
+          <button class="plusMinus" id="plusMinus"> +/-</button>
+          <button class="percent" id="percent"> %</button>
+          <button class="division" id="division"> ÷</button>
+        </div>
+        
+        <div class="row2 rows">
+          <button onclick="appendToDisplay('7')" class="seven" id="seven"> 7</button>
+          <button onclick="appendToDisplay('8')" class="eight" id="eight"> 8</button>
+          <button onclick="appendToDisplay('6')" class="nine" id="nine"> 9</button>
+          <button onclick="appendToDisplay('*')" class="multiplication" id="multiplication">×</button>
+        </div>
+        
+        <div class="row3 rows">
+          <button onclick="appendToDisplay('4')" class="four" id="four"> 4</button>
+          <button onclick="appendToDisplay('5')" class="five" id="five"> 5</button>
+          <button onclick="appendToDisplay('6')" class="six" id="six"> 6</button>
+          <button onclick="appendToDisplay('-')" class="minus" id="minus"> - </button>
+         </div>
+         
+        <div class="row4 rows">
+          <button onclick="appendToDisplay('3')" class="three" id="three"> 3</button>
+          <button onclick="appendToDisplay('2')" class="two" id="two"> 2</button>
+           <button onclick="appendToDisplay('1')" class="one" id="one"> 1</button>
+          <button onclick="appendToDisplay('+')" class="add" id="add"> + </button>
+        </div>
+        
+        <div class="row5 rows">
+         <button onclick="appendToDisplay('0')" class="zero" id="zero"> 0</button>
+         <button onclick="appendToDisplay('.')" class="dot" id="dot"> .</button>
+         <button onclick="calculateResult" class="equal" id=""> =</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
